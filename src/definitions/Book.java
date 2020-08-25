@@ -53,10 +53,10 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Book book = (Book) obj;
         return Objects.equals(getNameOfTheBook(), book.getNameOfTheBook()) &&
                 Objects.equals(getAuthorOfTheBook(), book.getAuthorOfTheBook()) &&
                 Objects.equals(getIsbnNumberOfTheBook(), book.getIsbnNumberOfTheBook());
