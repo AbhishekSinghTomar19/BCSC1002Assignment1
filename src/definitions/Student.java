@@ -15,6 +15,12 @@ public class Student {
     private int numberOfBooksIssuedByTheStudent;
     private Book[] nameOfAllTheBooksIssuedByTheStudent;
 
+    public Student(String studentFirstName, String studentMiddleName, String studentLastName, long studentUniversityRollNumber) {
+        studentFullName = studentFirstName + " " + studentMiddleName + " " + studentLastName;
+        this.studentFullName = studentFullName;
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
+
     public String getStudentFirstName() {
         return studentFirstName;
     }
