@@ -22,5 +22,12 @@ public class FrontDesk {
         System.out.print("Enter your university roll number : ");
         long studentUniversityRollNumber = scanner.nextInt();
         Student student = new Student(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber);
+        System.out.println();
+        System.out.println("<---------------------------->");
+        System.out.println();
+        System.out.println(student);
+        System.out.println();
+        System.out.println("<---------------------------->");
+        System.out.println();
     }
 }
