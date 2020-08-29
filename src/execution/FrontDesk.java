@@ -38,5 +38,29 @@ public class FrontDesk {
         int userChoice3;
         String bookName;
         String isbnNumber;
+        switch (userChoice) {
+            case 1 -> {
+                System.out.println("Okay then ! Choose an option ," + "\n" + "1. Want to enter the book name ." + "\n" + "2.Want to enter the book ISBN number .");
+                userChoice2 = scanner.nextInt();
+                scanner.nextLine();
+                switch (userChoice2) {
+                    case 1 -> {
+                        System.out.print("Enter the Book name : ");
+                        bookName = scanner.nextLine();
+                        System.out.println("Congratulations !" + '\'' + bookName + '\'' + " is issued to you.");
+                    }
+                    case 2 -> {
+                        System.out.print(" Enter ISBN no. of the book : ");
+                        isbnNumber = scanner.nextLine();
+                        System.out.println("Congratulations ! The book having the " + '\'' +
+                                isbnNumber + '\'' + " ISBN Number is issued to you.");
+                    }
+                    default -> System.out.println("invalid choice");
+
+                }
+                System.out.println();
+                System.out.println("Thank you, for visiting");
+            }
+        }
     }
 }
