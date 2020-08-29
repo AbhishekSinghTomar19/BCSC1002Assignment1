@@ -8,6 +8,7 @@ package execution;
 
 import definitions.Student;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FrontDesk {
@@ -81,6 +82,12 @@ public class FrontDesk {
                     default -> System.out.println("Invalid choice.");
 
                 }
+                System.out.println();
+                System.out.println("Thank you, for visiting !!");
+            }
+            case 3 -> {
+                System.out.println("Number of books issued by " + student.getStudentFullName() + " : " + student.getNumberOfBooksIssuedByTheStudent());
+                System.out.println("Name of all books issued by " + student.getStudentFullName() + " : " + Arrays.toString(student.getNameOfAllTheBooksIssuedByTheStudent()));
                 System.out.println();
                 System.out.println("Thank you, for visiting !!");
             }
