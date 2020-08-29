@@ -91,6 +91,7 @@ public class FrontDesk {
                 System.out.println();
                 System.out.println("Thank you, for visiting !!");
             }
+            case 4 -> System.out.println("Thank you, for visiting.");
         }
     }
 }
