@@ -34,5 +34,9 @@ public class FrontDesk {
         System.out.println();
         System.out.print("Enter your choice : ");
         int userChoice = scanner.nextInt();
+        int userChoice2;
+        int userChoice3;
+        String bookName;
+        String isbnNumber;
     }
 }
