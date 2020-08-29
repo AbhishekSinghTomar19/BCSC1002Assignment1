@@ -92,6 +92,7 @@ public class FrontDesk {
                 System.out.println("Thank you, for visiting !!");
             }
             case 4 -> System.out.println("Thank you, for visiting.");
+            default -> System.out.println("Invalid choice.");
         }
     }
 }
