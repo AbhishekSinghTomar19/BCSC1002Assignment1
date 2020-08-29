@@ -45,10 +45,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return " About the book : " +
-                "nameOfTheBook='" + nameOfTheBook + '\'' +
-                ", authorOfTheBook='" + authorOfTheBook + '\'' +
-                ", isbnNumberOfTheBook='" + isbnNumberOfTheBook + '\'';
+        return " About the book ---> " + "\n" +
+                "Name Of The Book : '" + nameOfTheBook + '\'' + "\n" +
+                "Author Of The Book : '" + authorOfTheBook + '\'' + "\n" +
+                "ISBN Number Of The Book : '" + isbnNumberOfTheBook + '\'';
     }
 
     @Override
