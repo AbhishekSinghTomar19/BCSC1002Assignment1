@@ -6,6 +6,8 @@
  * */
 package execution;
 
+import definitions.Student;
+
 import java.util.Scanner;
 
 public class FrontDesk {
@@ -19,5 +21,6 @@ public class FrontDesk {
         String studentLastName = scanner.nextLine();
         System.out.print("Enter your university roll number : ");
         long studentUniversityRollNumber = scanner.nextInt();
+        Student student = new Student(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber);
     }
 }
