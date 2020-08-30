@@ -22,11 +22,11 @@ public class FrontDesk {
         String studentLastName = scanner.nextLine();
         System.out.print("Enter your university roll number : ");
         long studentUniversityRollNumber = scanner.nextInt();
-        Student student = new Student(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber);
+        Student studentDetails = new Student(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber);
         System.out.println();
         System.out.println("<---------------------------->");
         System.out.println();
-        System.out.println(student);
+        System.out.println(studentDetails);
         System.out.println();
         System.out.println("<---------------------------->");
         System.out.println();
@@ -86,8 +86,8 @@ public class FrontDesk {
                 System.out.println("Thank you, for visiting !!");
             }
             case 3 -> {
-                System.out.println("Number of books issued by " + student.getStudentFullName() + " : " + student.getNumberOfBooksIssuedByTheStudent());
-                System.out.println("Name of all books issued by " + student.getStudentFullName() + " : " + Arrays.toString(student.getNameOfAllTheBooksIssuedByTheStudent()));
+                System.out.println("Number of books issued by " + studentDetails.getStudentFullName() + " : " + studentDetails.getNumberOfBooksIssuedByTheStudent());
+                System.out.println("Name of all books issued by " + studentDetails.getStudentFullName() + " : " + Arrays.toString(studentDetails.getNameOfAllTheBooksIssuedByTheStudent()));
                 System.out.println();
                 System.out.println("Thank you, for visiting !!");
             }
